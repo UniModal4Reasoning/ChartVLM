@@ -1,0 +1,38 @@
+MISSION:
+  MISSION_NAME: Deplot
+
+DATA:
+  DATA_NAME: plotQA
+  # The following DATA_ROOT needs to load the data preprocessed by the script in the folder of data_preprocess
+  # base_decoder/train/tools/data_preprocess
+  DATA_ROOT: ../data/Merge_All_Data_preprocess
+  MAX_PATCHES: 2048
+  SUB_SET: merge  # merge    H: human    M: augmented
+  LABEL_LENGTH: 1280
+
+MODEL:
+  PRETRAIN_MODEL_PATH: ./pix2struct-base/ ${PATH_TO_PRETRAINED_MODEL}
+  SAVE_MODE: huggingface  # pytorch  huggingface
+
+PROCESSOR:
+  PROCESSOR_NAME: ./pix2struct-base/ ${PATH_TO_TOKIZENER}
+
+OPTIMIZATION:
+  NUM_EPOCHS: 30 
+  BATCH_SIZE_PER_GPU: 2
+  OPTIMIZER: adam_onecycle
+  LR: 0.00005
+  WEIGHT_DECAY: 0.01
+  MOMENTUM: 0.9
+
+  MOMS: [0.95, 0.85]
+  PCT_START: 0.1
+  DIV_FACTOR: 10
+  DECAY_STEP_LIST: [35, 45]
+  LR_DECAY: 0.1
+  LR_CLIP: 0.0000001
+
+  LR_WARMUP: False
+  WARMUP_EPOCH: 1
+
+  GRAD_NORM_CLIP: 1

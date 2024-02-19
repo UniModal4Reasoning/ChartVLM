@@ -1,0 +1,47 @@
+[
+    {
+     "chart_type": "bar_chart",
+     "imgname": "bar_87",
+     "img": "./bar_chart/png/bar_87.png",
+     "topic": "Human Resources and Employee Management",
+     "title": " Employee salaries and benefits in 2021",
+     "csv": "Employee \\t Salary(USD) \\t Benefits(USD) \\n John \\t 5000 \\t 1400 \\n Sarah \\t 4500 \\t 1300 \\n David \\t 4600 \\t 1200 \\n Jane \\t 4200 \\t 1100 \\n ",
+     "description": {
+      "input": "Generate a descriptive text according to the chart image.",
+      "output": "The bar chart illustrates the salaries and benefits of four employees in 2021. John earns a salary of $5000 with benefits of $1400. Sarah's salary is $4500, accompanied by $1300 in benefits. David receives a salary of $4600 and benefits totaling $1200. Lastly, Jane has a salary of $4200 with benefits of $1100."
+     },
+   
+     "redrawing": {
+      "input": "Redraw the chart image using Python code.",
+      "output": "\nimport matplotlib.pyplot as plt\nimport numpy as np\n\ndata = [['John',5000,1400],['Sarah',4500,1300],['David',4600,1200],['Jane',4200,1100]]\nEmployee = [i[0] for i in data]\nSalary = [i[1] for i in data]\nBenefits = [i[2] for i in data]\n\nfig = plt.figure(figsize=(10,5))\n\nax = fig.add_subplot(1,1,1) \nax.bar(Employee, Salary, color = 'b', bottom=Benefits, width=0.5, label=\"Salary\")\nax.bar(Employee, Benefits, color = 'r', width=0.5, label=\"Benefits\")\n\nax.set_xticks(Employee)\nplt.xticks(rotation=20, wrap=True)\nax.set_title(\"Employee salaries and benefits in 2021\")\nax.set_xlabel('Employee')\nax.set_ylabel('Amount(USD)')\nax.legend()\n\nplt.tight_layout()\nplt.savefig('bar chart/png/235.png')\n\nplt.clf()"
+     },
+     "QA": {
+      "input": "How much more is John's salary compared to Jane's?",
+      "output": "$800"
+     }
+    },
+    {
+     "chart_type": "bar_chart",
+     "imgname": "bar_85",
+     "img": "./bar_chart/png/bar_85.png",
+     "topic": "Healthcare and Health",
+     "title": " Healthcare facilities and personnel in four regions in 2021",
+     "csv": "Region \\t Hospitals \\t Doctors \\t Nurses \\n North \\t 80 \\t 500 \\t 2500 \\n South \\t 90 \\t 550 \\t 2700 \\n East \\t 85 \\t 600 \\t 3000 \\n West \\t 100 \\t 550 \\t 2800 \\n ",
+     "description": {
+      "input": "Generate a descriptive text according to the chart image.",
+      "output": "This bar chart presents the number of hospitals, doctors, and nurses across four different regions in 2021. The North region reports 80 hospitals, 500 doctors, and 2500 nurses. The South shows slightly higher numbers with 90 hospitals, 550 doctors, and 2700 nurses. The East region has 85 hospitals, the highest number of doctors at 600, and also the highest number of nurses at 3000. The West leads in hospital count with 100, and matches the South with 550 doctors and has 2800 nurses."
+     },
+     "summarization": {
+      "input": "Create a brief summarization or extract key insights based on the chart image.",
+      "ouput_put": "The 2021 healthcare landscape was mapped out across four regions, with the West leading in hospital availability at 100 facilities. The South, despite having 90 hospitals, boasts the highest number of doctors at 550 and nurses at 2700, indicating a strong emphasis on human healthcare resources. The East isn't far behind, with the highest tally of doctors and nurses at 600 and 3000, respectively, though serviced by 85 hospitals. The North has a moderate setup with 80 hospitals, 500 doctors, and 2500 nurses. Overall, while the West may have more hospitals, the South and East place a greater focus on staffing, ensuring ample medical personnel."
+     },
+     "redrawing": {
+      "input": "Redraw the chart image using Python code.",
+      "output": "\nimport matplotlib.pyplot as plt\nfig = plt.figure(figsize=(10,6))\nax = fig.add_subplot(1,1,1)\nax.bar(['North','South','East','West'],[80,90,85,100],width=0.4,label=\"Hospitals\",alpha=0.8)\nax.bar(['North','South','East','West'],[500,550,600,550],width=0.4,label=\"Doctors\",bottom=[80,90,85,100],alpha=0.8)\nax.bar(['North','South','East','West'],[2500,2700,3000,2800],width=0.4,label=\"Nurses\",bottom=[580,640,685,650],alpha=0.8)\nax.set_xlabel('Region')\nax.set_ylabel('Quantity')\nax.set_title('Healthcare facilities and personnel in four regions in 2021')\nax.legend(loc='upper left')\nax.set_xticks(['North','South','East','West'])\nplt.tight_layout()\nplt.savefig('bar chart/png/341.png')\nplt.clf()"
+     },
+     "QA": {
+      "input": "How many more nurses are there in the East region compared to the North region?",
+      "output": "500"
+     }
+    }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2005,Germany,46),(2005,U.S.,0),(2006,Germany,56),(2006,U.S.,0),(2007,Germany,34),(2007,U.S.,0),(2008,Germany,26),(2008,U.S.,39),(2009,Germany,29),(2009,U.S.,50),(2010,Germany,30),(2010,U.S.,0),(2011,Germany,34),(2011,U.S.,0),(2012,Germany,29),(2012,U.S.,40),(2013,Germany,28),(2013,U.S.,0),(2014,Germany,28),(2014,U.S.,0),(2015,Germany,34),(2015,U.S.,38),(2016,Germany,28),(2016,U.S.,0),(2017,Germany,0),(2017,U.S.,0),(2018,Germany,39),(2018,U.S.,39)] <title> Germans previously viewed China less favorably than Americans did, but attitudes have converged of late Favorable views of China  <question> What's the color of graph with 56 as the highest value?",
+    "output": "Blue"
+  },
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2005,Germany,46),(2005,U.S.,0),(2006,Germany,56),(2006,U.S.,0),(2007,Germany,34),(2007,U.S.,0),(2008,Germany,26),(2008,U.S.,39),(2009,Germany,29),(2009,U.S.,50),(2010,Germany,30),(2010,U.S.,0),(2011,Germany,34),(2011,U.S.,0),(2012,Germany,29),(2012,U.S.,40),(2013,Germany,28),(2013,U.S.,0),(2014,Germany,28),(2014,U.S.,0),(2015,Germany,34),(2015,U.S.,38),(2016,Germany,28),(2016,U.S.,0),(2017,Germany,0),(2017,U.S.,0),(2018,Germany,39),(2018,U.S.,39)] <title> Germans previously viewed China less favorably than Americans did, but attitudes have converged of late Favorable views of China  <question> In which year the difference between blue and green graph 1?",
+    "output": "2018"
+  },
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2007,Not too much/not at all,0),(2007,Great deal) fair amount,26),(2009,Not too much/not at all,51),(2009,Great deal) fair amount,36),(2011,Not too much/not at all,0),(2011,Great deal) fair amount,0),(2013,Not too much/not at all,60),(2013,Great deal) fair amount,0),(2015,Not too much/not at all,0),(2015,Great deal) fair amount,0),(2017,Not too much/not at all,0),(2017,Great deal) fair amount,0),(2018,Not too much/not at all,772),(2018,Great deal) fair amount,0)] <title> Belief that U.S. considers other countries' interests in foreign policy returns to 2007 level In making international policy decisions, to what extent do you think the US. takes the interest of your country into account?  <question> What does the blue line represent?",
+    "output": "Not too much/not at all"
+  },
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2007,Not too much/not at all,0),(2007,Great deal) fair amount,26),(2009,Not too much/not at all,51),(2009,Great deal) fair amount,36),(2011,Not too much/not at all,0),(2011,Great deal) fair amount,0),(2013,Not too much/not at all,60),(2013,Great deal) fair amount,0),(2015,Not too much/not at all,0),(2015,Great deal) fair amount,0),(2017,Not too much/not at all,0),(2017,Great deal) fair amount,0),(2018,Not too much/not at all,772),(2018,Great deal) fair amount,0)] <title> Belief that U.S. considers other countries' interests in foreign policy returns to 2007 level In making international policy decisions, to what extent do you think the US. takes the interest of your country into account?  <question> What is the max value of blue line?",
+    "output": "0.72"
+  },
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2010,Budget deficit,60),(2010,Jobs,0),(2010,Economy,0.0),(2012,Budget deficit,0),(2012,Jobs,0),(2012,Economy,0.0),(2014,Budget deficit,63),(2014,Jobs,0),(2014,Economy,0.0),(2016,Budget deficit,0),(2016,Jobs,0),(2016,Economy,0.0),(2018,Budget deficit,48),(2018,Jobs,62),(2018,Economy,0.71)] <title> Downward trend in public views of economic issues as 'top priority' % who say_ is a top priority for the president and Congress  <question> What's the percentage of respondents who say Job is a top priority for the president and Congress in 2016?",
+    "output": "68"
+  },
+  {
+    "instruction": "Given the following triplet data (marked by <data>) with the title (marked by <title>) and the question related to the data (marked by <question>), give the answer with no output of hints, explanations or notes.",
+    "input": "<data> [(2010,Budget deficit,60),(2010,Jobs,0),(2010,Economy,0.0),(2012,Budget deficit,0),(2012,Jobs,0),(2012,Economy,0.0),(2014,Budget deficit,63),(2014,Jobs,0),(2014,Economy,0.0),(2016,Budget deficit,0),(2016,Jobs,0),(2016,Economy,0.0),(2018,Budget deficit,48),(2018,Jobs,62),(2018,Economy,0.71)] <title> Downward trend in public views of economic issues as 'top priority' % who say_ is a top priority for the president and Congress  <question> Which line has the lowest value of 71%?",
+    "output": "Economy"
+  }
+]

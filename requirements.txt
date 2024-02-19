@@ -1,0 +1,15 @@
+numpy
+llvmlite
+numba
+torch>=1.13.0
+tensorboardX
+transformers>=4.29.1
+datasets
+timm
+easydict
+matplotlib
+evaluate
+Levenshtein
+fire
+bitsandbytes
+peft
