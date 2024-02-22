@@ -26,13 +26,9 @@ output/*
 *.slurm
 *.ipynb
 
-tools/cfgs_zb
 tools/update_reminder.txt
 
-tools/train_random_source_target.py
 */logs/*
-
-base_decoder/train/p2s/tools/data_preprocess/data_preprocess_geo3k.py
 
 data
 trash
