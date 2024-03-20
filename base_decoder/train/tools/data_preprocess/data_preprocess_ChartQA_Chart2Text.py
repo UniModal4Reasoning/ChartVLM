@@ -20,18 +20,6 @@ input_tokenizer = Pix2StructProcessor.from_pretrained("pix2struct-base")
 label_tokenizer = Pix2StructProcessor.from_pretrained("pix2struct-base")
 label_tokenizer.image_processor.is_vqa = False
 input_tokenizer.image_processor.is_vqa = False
-"""
-prompts = ['Can you create a table based on the data in the chart below?',
-        'I need you to generate a table using the underlying data in the following figure.',
-        'Please produce a table using the data presented in the chart below.',
-        'From the figure presented below, can you generate a table with the underlying data?',
-        'I would like you to create a table using the data that underlies the chart below.',
-        'Please help me generate a table based on the data underlying the figure presented below.',
-        'Can you prepare a table utilizing the data from the chart below?',
-        'Using the data presented in the chart below, can you create a table?',
-        'Kindly generate a table with the underlying data from the figure presented below.',
-        'The table that shows the data underlying the following chart needs to be generated, can you do it?']
-"""
 
 for split in splits:
     
@@ -60,16 +48,10 @@ for split in splits:
         imgnames.append(imgname)
         imgs.append(image)
         texts.append(text)
-    print(len(texts))
-    print(len(imgs))
-    print(texts[10])
-    length = []
+
     for idx, (name, img, la) in enumerate(tzip(imgnames, imgs, texts)):
-        # length.append(len(la))
-    # print(max(length))  # 1814  1426  1143
         inputs = input_tokenizer(
                 images=img,
-                #text=random.choice(prompts),
                 return_tensors="pt",
                 padding="max_length",
                 # truncation=True,
@@ -86,9 +68,9 @@ for split in splits:
                 max_length=1280,
             ).input_ids
                
-        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_sim_input_flattened_patches.npy", inputs.data['flattened_patches'].numpy())
-        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_sim_input_attention_mask.npy", inputs.data['attention_mask'].numpy())
-        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_sim_label.npy", labels.numpy())
+        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_chartqa_input_flattened_patches.npy", inputs.data['flattened_patches'].numpy())
+        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_chartqa_input_attention_mask.npy", inputs.data['attention_mask'].numpy())
+        np.save(f"{sub_split_save_root}/{name.split('.')[0]}_{idx}_chartqa_label.npy", labels.numpy())
         
             
             
