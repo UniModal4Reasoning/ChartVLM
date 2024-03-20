@@ -9,7 +9,7 @@ from tqdm.contrib import tzip
 from transformers import Pix2StructProcessor
 
 
-root = " " # this path needs to cover the root of your dataset
+root = "./SimChart9K" # this path needs to cover the root of your dataset
 save_root = " " # Save path
 os.makedirs(save_root, exist_ok=True)
 
