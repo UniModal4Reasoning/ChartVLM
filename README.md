@@ -6,6 +6,9 @@
 # ChartX & ChartVLM
 Recently, many versatile Multi-modal Large Language Models (MLLMs) have emerged continuously. However, their capacity to query information depicted in visual charts and engage in reasoning based on the queried contents remains under-explored. In this paper, to comprehensively and rigorously benchmark the ability of the off-the-shelf MLLMs in the chart domain, we construct ChartX, a multi-modal evaluation set covering 18 chart types, 7 chart tasks, 22 disciplinary topics, and high-quality chart data. Besides, we develop ChartVLM to offer a new perspective on handling multi-modal tasks that strongly depend on interpretable patterns such as reasoning tasks in the field of charts or geometric images. We evaluate the chart-related ability of mainstream MLLMs and our ChartVLM on the proposed ChartX evaluation set. Extensive experiments demonstrate that ChartVLM surpasses both versatile and chart-related large models, achieving results comparable to GPT-4V. We believe that our study can pave the way for further exploration in creating a more comprehensive chart evaluation set and developing more interpretable multi-modal models.
 
+## Release
+
+- [2024/2/19] 🔥 We have released the ChartX benchmark [data](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) to evaluate the chart-related capabilities of the existing MLLMS.
 
 <div align=center>
 <img src="assets/motivation.png" height="85%">
@@ -203,3 +206,14 @@ Please refer to [eval](eval/README.md) for details of evaluation all tasks
 </div>
 
 </details>
+
+## Citation
+If you find our work useful in your research, please consider citing Fox:
+```bibtex
+@article{xia2024chartx,
+  title={ChartX \& ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning},
+  author={Xia, Renqiu and Zhang, Bo and Ye, Hancheng and Yan, Xiangchao and Liu, Qi and Zhou, Hongbin and Chen, Zijun and Dou, Min and Shi, Botian and Yan, Junchi and others},
+  journal={arXiv preprint arXiv:2402.12185},
+  year={2024}
+}
+```
