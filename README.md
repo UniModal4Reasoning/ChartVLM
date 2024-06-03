@@ -8,7 +8,7 @@ Recently, many versatile Multi-modal Large Language Models (MLLMs) have emerged 
 
 ## Release
 
-- [2024/2/19] 🔥 We have released the ChartX benchmark [data](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) to evaluate the chart-related capabilities of the existing MLLMS.
+- [2024/2/21] 🔥 We have released the ChartX benchmark [data](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) to evaluate the chart-related capabilities of the existing MLLMS.
 
 <div align=center>
 <img src="assets/motivation.png" height="85%">
@@ -119,9 +119,11 @@ ChartX
 <h1>ChartVLM<br></h1>
 </div>
 
+
 ## ChartVLM Overall: 
 - **(1)** To enhance the interpretability of the chart model in cognition tasks (e.g. answer questions based on chart image), ChartVLM first performs the base perception task (e.g. structural extraction from the given chart image to a predicted CSV data), and then, finishes other cognition tasks (e.g. chart redrawing, description, summary, and QA) based on the extracted structural data. 
 - **(2)** To choose the task that users expect to perform according to the used prompts, the instruction adapter is designed, which can cover a variety of user instructions as illustrated in this figure.
+
 
 <div align=center>
 <img src="assets/chartvlm.png" height="85%">
