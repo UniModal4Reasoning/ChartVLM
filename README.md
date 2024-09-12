@@ -8,7 +8,7 @@ Recently, many versatile Multi-modal Large Language Models (MLLMs) have emerged 
 
 ## Release
 
-- [2024/2/21] 🔥 We have released the ChartX benchmark [data](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) to evaluate the chart-related capabilities of the existing MLLMS.
+- [2024/2/21] 🔥 We have released the ChartX benchmark [data](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) to evaluate the chart-related capabilities of the existing MLLMS. We divide the entire ChartX benchmark into [4,848 validation samples](https://drive.google.com/file/d/13jwSO8kaAnbPujECQK9x2QA_TXByzzYH/view?usp=sharing) and [1,152 test samples](https://drive.google.com/file/d/1kOEi5Kca7WnFhBGyJlBIEtlgaIk004o0/view?usp=sharing). Results reported in Table 2 to 5 are evaluated on test samples. The evaluation log is shown [here](eval/eval_result_SE_on_ChartX.log).
 
 <div align=center>
 <img src="assets/motivation.png" height="85%">
