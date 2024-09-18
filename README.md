@@ -1,9 +1,11 @@
 <div align="center">
+
 <h1>ChartX & ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning</h1>
 
 [[ Related Paper ]](https://arxiv.org/abs/2402.12185) [[ Website ]](https://unimodal4reasoning.github.io/DocGenome_page/) [[ Dataset (Google Drive)]](https://drive.google.com/file/d/1d6zyH3kIwgepTqR0fc67xzyUtblrvOIX/view) [[ Dataset (Hugging Face) ]](https://huggingface.co/datasets/U4R/ChartX/viewer)
 
 [[Models 🤗(Hugging Face)]](https://huggingface.co/U4R/ChartVLM-base)
+</div>
 
 # ChartX & ChartVLM
 Recently, many versatile Multi-modal Large Language Models (MLLMs) have emerged continuously. However, their capacity to query information depicted in visual charts and engage in reasoning based on the queried contents remains under-explored. In this paper, to comprehensively and rigorously benchmark the ability of the off-the-shelf MLLMs in the chart domain, we construct ChartX, a multi-modal evaluation set covering 18 chart types, 7 chart tasks, 22 disciplinary topics, and high-quality chart data. Besides, we develop ChartVLM to offer a new perspective on handling multi-modal tasks that strongly depend on interpretable patterns such as reasoning tasks in the field of charts or geometric images. We evaluate the chart-related ability of mainstream MLLMs and our ChartVLM on the proposed ChartX evaluation set. Extensive experiments demonstrate that ChartVLM surpasses both versatile and chart-related large models, achieving results comparable to GPT-4V. We believe that our study can pave the way for further exploration in creating a more comprehensive chart evaluation set and developing more interpretable multi-modal models.
